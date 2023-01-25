@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+}
+
+.hero-cta-bg-style {
+  background: linear-gradient(
+    90deg,
+    #44ff9a -0.55%,
+    #44b0ff 22.86%,
+    #8b44ff 48.36%,
+    #f64 73.33%,
+    #ebff70 99.34%
+  );
+}
+
+.max-h-screen-header {
+  max-height: calc(100vh - 62px);
+}
+
+.grid-parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
